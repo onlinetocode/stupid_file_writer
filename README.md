@@ -21,7 +21,7 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-require 'stupid_file_writer
+require 'stupid_file_writer'
 
 StupidFileWriter.write('path/to/file.txt', 'This is my content')
 ```
