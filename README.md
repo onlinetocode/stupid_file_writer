@@ -1,6 +1,6 @@
 # StupidFileWriter
 
-This gem has one simple task. It should create a file with the given content. It creates a path if it's not existend.
+This gem has one simple task. It should create a file with the given content. It creates the path if it's not existent.
 
 ## Installation
 
