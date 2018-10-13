@@ -49,4 +49,16 @@ describe StupidFileWriter do
     StupidFileWriter.write(@full_path, @content)
     assert_equal File.read(@full_path), @content, 'Content is overwritten'
   end
+
+  it "must create content without path" do
+    path = @path
+    StupidFileWriter.write(@filename, @content)
+    assert_equal File.read(@filename), @content, 'Content is created'
+  end
+
+  it "must overwrite content in file" do
+    StupidFileWriter.write(@filename, 'To overwrite')
+    StupidFileWriter.write(@filename, @content)
+    assert_equal File.read(@filename), @content, 'Content is overwritten'
+  end
 end
